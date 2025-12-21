@@ -1,9 +1,16 @@
 # 🍔 Foodies - Food Recipe Sharing Platform
 
-A modern food recipe sharing platform built with Next.js 14, allowing users to browse delicious meals and share their own recipes with the community.
+A modern food recipe sharing platform built with Next.js, allowing users to browse delicious meals and share their own recipes with the community.
+
+## 🌐 Live Demo
+
+**[View Live Application →](https://foodies-nine-pi.vercel.app/)**
+
+Experience the app in action: [https://foodies-nine-pi.vercel.app/](https://foodies-nine-pi.vercel.app/)
 
 ## 📋 Table of Contents
 
+- [Live Demo](#live-demo)
 - [Overview](#overview)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
@@ -13,6 +20,7 @@ A modern food recipe sharing platform built with Next.js 14, allowing users to b
 - [Database Schema](#database-schema)
 - [API Routes & Server Actions](#api-routes--server-actions)
 - [Scripts](#scripts)
+- [Deployment](#deployment)
 - [Environment](#environment)
 - [Contributing](#contributing)
 
@@ -282,6 +290,42 @@ export async function shareMeal(prevState, formData)
 - **CSS Modules**: Component-scoped styling
 - **Global Styles**: `app/globals.css`
 - **Responsive Design**: Mobile-friendly layouts
+
+## 🚀 Deployment
+
+### Vercel (Production)
+
+This application is deployed on [Vercel](https://vercel.com), the platform built by the creators of Next.js.
+
+**Live URL**: [https://foodies-nine-pi.vercel.app/](https://foodies-nine-pi.vercel.app/)
+
+#### Why Vercel?
+
+- **Zero Configuration**: Automatic Next.js detection and optimization
+- **Server Actions Support**: Full support for Next.js server actions
+- **Database Compatibility**: Works seamlessly with SQLite and serverless functions
+- **Automatic Deployments**: Every push to main branch triggers a new deployment
+- **Edge Network**: Global CDN for fast content delivery
+- **Free Tier**: Perfect for learning projects and small applications
+
+#### Deploy Your Own
+
+To deploy your own instance:
+
+1. Push your code to GitHub
+2. Visit [vercel.com](https://vercel.com) and sign in
+3. Click "New Project" and import your repository
+4. Vercel will auto-detect Next.js and configure everything
+5. Click "Deploy" and wait ~2 minutes
+6. Your app will be live with a URL like `your-app.vercel.app`
+
+#### Alternative Deployment Options
+
+- **Netlify**: Similar to Vercel with good Next.js support
+- **Railway**: For apps needing persistent databases
+- **Self-hosted**: Use `npm run build` and `npm start` on any Node.js server
+
+> **Note**: GitHub Pages is not suitable for this project as it only serves static files and cannot run Node.js servers, databases, or server actions.
 
 ## 🤝 Contributing
 
